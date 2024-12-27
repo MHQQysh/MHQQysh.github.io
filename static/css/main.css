@@ -2593,6 +2593,10 @@ p {
   .banner-herowrapper .banner-middle .banner-counter .counter-bitem .pra-clr {
     font-size: 14px;
   }
+  .banner-herowrapper .banner-middle .banner-counter .counter-bitem .pra-clr2
+  {
+    font-size: 40px;
+  }
 }
 @media (max-width: 1199px) {
   .banner-herowrapper .banner-middle {

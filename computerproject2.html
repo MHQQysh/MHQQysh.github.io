@@ -1,449 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!--<< Header Area >>-->
-
+<html lang="zh-CN">
 <head>
-   <!--<< Required meta tags >>-->
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--<< Title >>-->
-   <title>Shihong Yuan's Website</title>
-   <!--<< Favcion >>-->
-   <link rel="shortcut icon" href="static/picture/avator.jpg">
-   <!--<< Bootstrap min.css >>-->
-   <link rel="stylesheet" href="static/css/bootstrap.min.css">
-   <!--<< Aos animation css >>-->
-   <link rel="stylesheet" href="static/css/aos.css">
-   <!--<< Main.css >>-->
-   <link rel="stylesheet" href="static/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后端项目：英雄联盟小学管理系统 | 袁诗鸿</title>
+  <meta name="description" content="袁诗鸿的 Java SSM 后端项目记录。">
+  <link rel="icon" href="static/picture/avator.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<!--<< Body Area >>-->
-
-<body>
-
-   <!--<< Preloader >>-->
-   <div class="preloader__Dixon">
-      <div class="box text-center">
-         <span class="fz-30 mati fw-600 text-uppercase">
-            Shihong Yuan
-         </span>
+<body
+  data-page="projects"
+  data-title-zh="后端项目：英雄联盟小学管理系统 | 袁诗鸿"
+  data-title-en="Primary-School Management System | Shihong Yuan"
+  data-description-zh="袁诗鸿的 Java SSM 后端项目记录。"
+  data-description-en="Backend case study for a Java SSM management system project by Shihong Yuan."
+>
+  <header class="site-header">
+    <nav class="nav-shell container">
+      <a class="brand" href="index.html" aria-label="Shihong Yuan home">
+        <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
+        <span class="brand-copy">
+          <span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span>
+          <span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu" data-nav-menu>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
+          <a class="nav-link" href="index.html#testi" data-i18n-en="Research">科研</a>
+          <a class="nav-link" href="index.html#serv" data-page-link="projects" data-i18n-en="Computer Projects">计算机项目</a>
+          <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
+          <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+        </div>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button>
+          <span>/</span>
+          <button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button>
+        </div>
       </div>
-   </div>
-   <!--<< Preloader >>-->
+    </nav>
+  </header>
 
-   <!--<< banner >>-->
-   <section class="breadcrumnd-section" id="bn">
-      <!--<< Header v-1 >>-->
-      <header class="header-section header-style-inner">
-         <div class="container">
-            <div class="header-wrapper align-items-lg-start align-items-center">
-               <div class="main-logo cmn-shadow round8">
-                  <a href="index.html" class="logo">
-                     <img src="static/picture/avator.jpg" alt="logo">
-                  </a>
-               </div>
-               <div class="main-menu-wrapper w-100">
-                  <ul class="main-menu cmn-shadow round8">
-                     <li>
-                        <a href="index.html">
-                           Home
-                        </a>
-                     </li>
-                     <li>
-                        <a href="index.html#about">
-                           About me
-                        </a>
-                     </li>
-                     <!-- <li>
-                        <a href="index.html#reprot">
-                           Resume
-                        </a>
-                     </li> -->
-                     <!-- <li>
-                        <a href="index.html#skill">
-                           Stact
-                        </a>
-                     </li> -->
-                     <li>
-                        <a href="index.html#serv">
-                           Computer Projects 
-                        </a>
-                     </li>
-                     <li>
-                        <a href="index.html#ports">
-                           Mechanical Projects
-                        </a>
-                     </li>
-                     <li>
-                        <a href="index.html#testi">
-                           Scientific Research
-                        </a>
-                     </li>
-                     <li>
-                        <a href="index.html#blogs">
-                           Blogs
-                        </a>
-                     </li>
-                     <!-- <li>
-                        <a href="index.html#conts">
-                           Contact Us
-                        </a>
-                     </li> -->
-                  </ul>
-               </div>
-               <div class="right-bar">
-                  <div class="bars-style cmn-shadow round8 d-lg-none">
-                     <div class="header-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                     </div>
-                  </div>
-                  <ul class="right-social-com d-xl-flex d-none cmn-social cmn-shadow round8">
-                     <li>
-                        <a href="weixin://contacts/profile/exammle" onclick="showWeixinID()" target="_blank">
-      
-                        <i class="bi bi-wechat" style="left: -10px;"></i>
-                        </a>
-                         <script>
-                         function showWeixinID() {
-                           alert('微信号: 1361331022');
-                         }
-                         </script>
-                     </li>
-                     <li>
-                       <a href="https://github.com/mhqqysh" target="_blank">
-                         <i class="bi bi-github"></i>
-                       </a>
-                     </li>
-                     <li>
-                       <a href="https://mhqqysh.cn" target="_blank">
-                         <i class="bi bi-globe"></i>
-                       </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!--<< Header v-1 >>-->
+  <main>
+    <section class="page-hero">
+      <div class="project-dense-container page-heading">
+        <p class="eyebrow" data-i18n-en="Computer Project / Back End">计算机项目 / 后端</p>
+        <h1 class="page-title" data-i18n-en="Primary-School Management System">后端项目：英雄联盟小学管理系统</h1>
+        <p class="page-summary" data-i18n-en="A Java SSM project centered on CRUD logic, environment setup, and the first real experience of understanding how frontend and backend connect.">
+          一个以 Java SSM 为核心的项目，重点在增删改查、环境配置，以及第一次真正理解前后端如何协同工作。
+        </p>
+      </div>
+    </section>
 
-      <!--<< Bread Content >>-->
-      <div class="container pt-100 pb-100">
-         <div class="section-title text-center">
-            <a href="index.html" class="section-sub" data-aos="fade-down" data-aos-duration="1000">
-               Back To Home
-            </a>
-            <h2 class="stitle fw-500 mt-3 mb-4" data-aos="fade-down" data-aos-duration="1500">
-               后端项目：英雄联盟小学管理系统
-            </h2>
-            <p class="pra-clr max-458">
-               Java SSM（Spring SpringMVC Mybatis） 前后端分离
+    <section class="page-shell">
+      <div class="project-dense-container story-layout">
+        <div class="story-text-column">
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Overview">概述</p>
+            <h2 data-i18n-en="From “it runs” to “I understand why it runs”">从“能跑起来”到“理解为什么能跑”</h2>
+            <p data-i18n-en="For me, this project mattered less as a polished product and more as the first time backend logic became intelligible instead of opaque. Java SSM stopped being a list of terms and started becoming an actual system I could reason about.">
+              对我来说，这个项目的重要性不在于它有多成熟，而在于它是我第一次真正把“后端系统逻辑”从黑箱变成可理解对象的过程。Java SSM 不再只是几个概念，而开始成为一套我能够推理和调试的系统。
             </p>
-         </div>
+            <p data-i18n-en="The original notes described the experience very honestly: before the project ran, everything felt painful; after it ran, understanding finally began. That is still the best summary of the whole process.">
+              原始页面里有一句很准确的话：项目跑通之前很痛苦，跑通之后才真正开始理解。这几乎就是整个过程最贴切的总结。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="What I learned">我学到了什么</p>
+            <h2 data-i18n-en="Backend development is less visible, but not less concrete">后端比前端更不直观，但并不更抽象</h2>
+            <p data-i18n-en="What this project gave me was not just CRUD practice. More importantly, it taught me how frontend and backend responsibilities actually connect, how debugging tools matter, and how environment setup can dominate progress before the product is even meaningful.">
+              这个项目给我的并不只是 CRUD 实践。更重要的是，它让我开始理解前后端职责究竟是怎样连起来的、调试工具为什么重要，以及在产品真正有意义之前，环境配置会如何决定推进速度。
+            </p>
+            <p data-i18n-en="Compared with frontend work, backend still felt harder to enter because so many moving parts were hidden. But once the system ran, those hidden parts became much clearer, and each subsequent change stopped feeling like blind trial and error.">
+              和前端相比，后端仍然更难入门，因为太多关键部分都隐藏在结构里面。但一旦系统跑通，这些原本看不见的东西就会一下清晰很多，后续每一次修改也不再像是盲目试错。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Reflection">项目反思</p>
+            <h2 data-i18n-en="A first real backend learning curve">第一次真正像样的后端学习曲线</h2>
+            <p data-i18n-en="This project was still relatively small, but it already showed me where the next set of problems would come from: larger file structures, more dependencies, richer frontend logic, and more realistic deployment pain. That is exactly why it mattered.">
+              这个项目本身规模不算大，但已经足够让我看到下一批真正的问题会从哪里冒出来：更长的文件结构、更多依赖、更复杂的前端逻辑，以及更真实的部署压力。这也正是它值得保留在作品集里的原因。
+            </p>
+          </article>
+        </div>
+
+        <div class="story-media-column">
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Screen 01">界面 01</p>
+            <img src="static/picture/backend3.jpg" alt="Backend project screenshot 1">
+            <p class="story-media-caption" data-i18n-en="A representative project screen from the backend system interface.">最能代表这个后端项目界面的截图之一。</p>
+          </div>
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Screen 02">界面 02</p>
+            <img src="static/picture/backend2.jpg" alt="Backend project screenshot 2">
+            <img src="static/picture/backend1.jpg" alt="Backend project screenshot 3">
+            <p class="story-media-caption" data-i18n-en="Additional views showing the working interface and page flow.">补充展示系统页面与界面流程的截图。</p>
+          </div>
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Screen 03">界面 03</p>
+            <img src="static/picture/backend4.jpg" alt="Backend project screenshot 4">
+            <img src="static/picture/backend5.jpg" alt="Backend project screenshot 5">
+            <p class="story-media-caption" data-i18n-en="More screens that document the project’s functional completeness.">用于说明项目功能完整度的更多界面截图。</p>
+          </div>
+        </div>
       </div>
-   </section>
-   <!--<< banner >>-->
+    </section>
+  </main>
 
-   <!--<< project one >>-->
-   <section class="project-section pb-120">
-      <div class="container">
-         <div class="row g-4">
-            <div class="col-lg-4">
-               <div class="protfolio-details-wrap pe-xxl-4">
-                  <h4 class="white mb-30">
-                     Project Details
-                  </h4>
-                  <div class="des-dated-area">
-                     <div class="date-border"></div>
-                     <div class="dates-item">
-                        <span class="date-text">
-                           时间:
-                        </span>
-                        <span class="pra-clr fw-400">
-                           Sep 4th, 2024
-                        </span>
-                     </div>
-                     <div class="date-border"></div>
-                     <div class="dates-item">
-                        <span class="date-text">
-                           主要任务:
-                        </span>
-                        <span class="pra-clr fw-400">
-                           java后端开发，springboot svm框架开发，前后端分离。增删改查
-                        </span>
-                     </div>
-                     <div class="date-border"></div>
-                     <div class="dates-item">
-                        <span class="date-text">
-                           得到技能1:
-                        </span>
-                        <p class="pra-clr fw-400">
-                           Java SSM（Spring SpringMVC Mybatis） 前后端分离
-                        </p>
-                     </div>
-                     <div class="date-border"></div>
-                     <div class="dates-item d-grid gap-lg-4 gap-3">
-                        <span class="date-text">
-                           感受:
-                        </span>
-                        <p class="pra-clr fw-400 pra-one">会用了最基础的ssm，下面的步骤其实越来越清晰了。</p>
-                        <p class="pra-clr fw-400 pra-one">该说不说，项目跑通之前，真的太难受了，各种bug，很多时候都是猜测加修正自己在做的事情。（对了无论做多少次项目，环境配置永远是我心中的痛）但是跑通之后，边修改边理解，进展速度稳定太多。</p>
-                        <p class="pra-clr fw-400 pra-one">核心是理解了spring的前后端关联的工作逻辑。其他比较基础的功能 登录二维码，增删改查，管理员算是逻辑的一部分吧，浏览器开发者工具，idea真是大幅简化开发难度，springboot框架开始感觉很高级现在觉得还好。</p>
-                        <p class="pra-clr fw-400 pra-one">下一阶段前后端分离的一个项目其实做了一半了，主要是vue中js逻辑简直啥也不会。然后后端可能还有一些小功能加入，比如缓存，分布式什么的。</p>
-                        <p class="pra-clr fw-400 pra-one">
-                        对比前后端，在入门难度上确实后端要难不少因为集成的东西太多而且不太直观，前端htmlcss学会就能入门了。</p>
-                        <p class="pra-clr fw-400 pra-one">当然了当前项目一共也没几个文件，文件也比较短，感觉长了之后开发者工具都很难调。前路还长，也只能慢慢来吧。</p>
-                        <div class="date-border"></div>
-                        <div class="visit-btn mt-xxl-5 mt-4">
-                           <a href="#" class="cmn-shadow round100 py-xxl-3 py-3 px-xxl-5 px-4 white fz-16">
-                              Visit Link(offline)
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-8">
-               <div class="project-detial-right mt-lg-0 mt-4">
-                  <div class="thumbs w-100">
-                     <img src="static/picture/backend3.jpg" alt="img" class="w-100">
-                  </div>
-                  <div class="thumbs w-100">
-                     <img src="static/picture/backend2.jpg" alt="img" class="w-100">
-                  </div>
-                  <div class="thumbs w-100">
-                     <img src="static/picture/backend1.jpg" alt="img" class="w-100">
-                  </div>
-                  <div class="thumbs w-100">
-                     <img src="static/picture/backend4.jpg" alt="img" class="w-100">
-                  </div>
-                  <div class="thumbs w-100">
-                     <img src="static/picture/backend5.jpg" alt="img" class="w-100">
-                  </div>
-               </div>
-            </div>
-         </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p>
+        <p class="footer-copy" data-i18n-en="Case-study archive rebuilt from the original portfolio.">从原始作品集重建而来的项目档案页。</p>
       </div>
-   </section>
-   <!--<< project one >>-->
-
-   <!--<< Single Project >>-->
-   <section class="single-project pb-100">
-      <div class="container">
-         <h3 class="single-head white">
-            Related Projects
-         </h3>
-         <div class="single-project-wrap">
-            <div class="row g-4">
-               <div class="col-lg-4 col-md-6">
-                  <div class="protfolio-porject-item d-center">
-                     <img src="static/picture/pro1.png" alt="img">
-                     <div class="project-cont-inner">
-                        <span class="title date-title text-end pt-3 pe-4 d-block">
-                           @2024
-                        </span>
-                        <div class="project-cont-box d-center w-100 h-100 position-relative">
-                           <div class="boxes text-center">
-                              <h4>
-                                 <a href="" class="title">
-                                    <span class="d-block">
-                                       Digital
-                                    </span>
-                                    Masterpieces
-                                 </a>
-                              </h4>
-                              <span class="ui-badge">
-                                 UI/Ux Design
-                              </span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <div class="protfolio-porject-item d-center">
-                     <img src="static/picture/pro2.png" alt="img">
-                     <div class="project-cont-inner">
-                        <span class="title date-title text-end pt-3 pe-4 d-block">
-                           @2024
-                        </span>
-                        <div class="project-cont-box d-center w-100 h-100 position-relative">
-                           <div class="boxes text-center">
-                              <h4>
-                                 <a href="" class="title">
-                                    <span class="d-block">
-                                       Wev
-                                    </span>
-                                    Development
-                                 </a>
-                              </h4>
-                              <span class="ui-badge">
-                                 Web Design
-                              </span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <div class="protfolio-porject-item d-center">
-                     <img src="static/picture/pro3.png" alt="img">
-                     <div class="project-cont-inner">
-                        <span class="title date-title text-end pt-3 pe-4 d-block">
-                           @2024
-                        </span>
-                        <div class="project-cont-box d-center w-100 h-100 position-relative">
-                           <div class="boxes text-center">
-                              <h4>
-                                 <a href="" class="title">
-                                    <span class="d-block">
-                                       Graphic
-                                    </span>
-                                    Designer
-                                 </a>
-                              </h4>
-                              <span class="ui-badge">
-                                 UI/Ux Design
-                              </span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n-en="Home">首页</a>
+        <a href="index.html#testi" data-i18n-en="Research">科研</a>
+        <a href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
+        <a href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
+        <a href="index.html#blogs" data-i18n-en="Life">生活</a>
       </div>
-   </section>
-   <!--<< Single Project >>-->
-
-   <!--<<  Footer >>-->
-   <!-- <div class="footer-section check-box-style pt-100">
-      <div class="container p-0">
-         <div class="talk-text text-center " data-aos="zoom-in" data-aos-duration="1400">
-            LET’S WITH
-            TALK
-         </div>
-         <a href="#" class="infomail d-center cmborder round100">
-            contactinfo@gmail.com
-         </a>
-         <div class="footer-topping-wrap check-box-style round30">
-            <div class="row justify-content-between">
-               <div class="col-xl-4 col-lg-6">
-                  <div class="contact-left">
-                     <p class="pra-clr fz16 pragraph-one">
-                        Great! We're excited to hear from you and
-                        let's start something special togerter. call
-                        us for any inquery.
-                     </p>
-                     <div class="contact-infos">
-                        <a href="#">
-                           Valentin, Street Road 24, New York,
-                           USA - 67452
-                        </a>
-                        <a href="#">
-                           (+02) 574 - 328 - 301
-                        </a>
-                        <a href="#">
-                           infocontact@gmail.com
-                        </a>
-                     </div>
-                     <div class="footer-social">
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Facebook
-                        </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Twitter
-                        </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Behance
-                        </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Dribble
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-7 col-lg-6">
-                  <form action="#" class="cmn-contact-form row g-4">
-                     <div class="col-lg-6">
-                        <input type="text" placeholder="Name">
-                     </div>
-                     <div class="col-lg-6">
-                        <input type="email" placeholder="Email">
-                     </div>
-                     <div class="col-lg-12">
-                        <input type="text" placeholder="Subject">
-                     </div>
-                     <div class="col-lg-12">
-                        <textarea name="message" rows="5" placeholder="Message"></textarea>
-                     </div>
-                     <div class="col-lg-12">
-                        <div class="btns">
-                           <button type="submit" class="cmn-btn">
-                              Send Message
-                           </button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-         <div class="footer-bottom">
-            <div class="copyright">
-               <p class="pra-clr">
-                  &copy; 2024. All rights reserved <a href="index.html" class="pwhite">Disum.</a>
-               </p>
-               <a href="#bn" class="scroll-toptext">
-                  Back To Home
-               </a>
-               <ul class="terms">
-                  <li>
-                     <a href="#0">
-                        Terms & Condition
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#0">
-                        Privacy Policy
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
+      <div class="footer-meta">
+        <span>Contact: shihong.23@intl.zju.edu.cn</span>
+        <span><span data-i18n-en="Year">年份</span>: <span data-year></span></span>
       </div>
-   </div>
-   <<  Footer >> -->
+    </div>
+  </footer>
 
-
-
-
-
-
-   <!--<< Jquery Latest >>-->
-   <script src="static/js/jquery-3.7.0.min.js"></script>
-   <!--<< Viewport Js >>-->
-   <script src="static/js/viewport.jquery.js"></script>
-   <!--<< Bootstrap Js >>-->
-   <script src="static/js/bootstrap.min.js"></script>
-   <!--<< Aos animation Js >>-->
-   <script src="static/js/aos.js"></script>
-   <!--<< Nice Select Js >>-->
-   <script src="static/js/jquery.nice-select.min.js"></script>
-   <!--<< Swiper Slide Js >>-->
-   <script src="static/js/swiper-bundle.min.js"></script>
-   <!--<< Swiper Bundle Js >>-->
-   <script src="static/js/jquery.magnific-popup.min.js"></script>
-   <!--<< magnific popup Js >>-->
-   <script src="static/js/odometer.min.js"></script>
-   <!--<< Odometer js Js >>-->
-   <script src="static/js/wow.min.js"></script>
-   <!--<< Wow Animation js >>-->
-   <script src="static/js/main.js"></script>
-   <!--<< Main.js >>-->
+  <script src="script.js"></script>
 </body>
-
 </html>

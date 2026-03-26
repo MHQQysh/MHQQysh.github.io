@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>科研项目：感知驱动的足式机器人运动控制 | 袁诗鸿</title>
+  <meta name="description" content="袁诗鸿的科研项目页：感知驱动的足式机器人运动控制。">
+  <link rel="icon" href="static/picture/avator.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body
+  data-page="research"
+  data-title-zh="科研项目：感知驱动的足式机器人运动控制 | 袁诗鸿"
+  data-title-en="Research Project | Perception-driven Legged Robot Locomotion Control | Shihong Yuan"
+  data-description-zh="袁诗鸿的科研项目页：感知驱动的足式机器人运动控制。"
+  data-description-en="Research page for Shihong Yuan's perception-driven legged robot locomotion control project."
+>
+  <header class="site-header">
+    <nav class="nav-shell container">
+      <a class="brand" href="index.html" aria-label="Shihong Yuan home">
+        <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
+        <span class="brand-copy"><span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span><span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span></button>
+      <div class="nav-menu" id="nav-menu" data-nav-menu>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
+          <a class="nav-link" href="index.html#testi" data-i18n-en="Research">科研</a>
+          <a class="nav-link" href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
+          <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
+          <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+        </div>
+        <div class="lang-toggle" aria-label="Language switcher"><button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button><span>/</span><button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="project-dense-container page-heading">
+        <p class="eyebrow" data-i18n-en="Research Project / 2026.03 - Present">科研项目 / 2026.03 - 至今</p>
+        <h1 class="page-title" data-i18n-en="Perception-driven Legged Robot Locomotion Control">感知驱动的足式机器人运动控制</h1>
+        <p class="page-summary" data-i18n-en="A deployable legged-locomotion project covering teacher-student learning, PPO optimization, TRON1 simulation in Isaac Sim, sim-to-sim transfer in MuJoCo, and hardware validation.">
+          一个面向可部署足式运动控制的项目，覆盖教师-学生学习、PPO 优化、TRON1 在 Isaac Sim 中的环境搭建、MuJoCo 跨仿真迁移以及真机验证。
+        </p>
+      </div>
+    </section>
+    <section class="page-shell">
+      <div class="project-dense-container story-layout">
+        <div class="story-text-column">
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Lab and Advisors">实验室与导师</p>
+            <h2 data-i18n-en="Research Context">研究背景</h2>
+            <p data-i18n-en="Lab: ZJU-UIUC Physical Intelligence Lab. Advisors: Prof. Chen Ye and Prof. Yang Liangjing.">
+              实验室：ZJU-UIUC 物理智能实验室。导师：谌烨教授 / 杨量景教授。
+            </p>
+            <p data-i18n-en="The project focused on a core deployment question in legged robotics: how to move from simulator-heavy training to policies that can remain stable once perception becomes the dominant input channel.">
+              这个项目关注的是足式机器人里最核心的一个部署问题：如何从 heavily simulator-based 的训练，过渡到真正依赖感知输入、且在实际环境中仍然保持稳定的控制策略。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="My Role">我的职责</p>
+            <h2 data-i18n-en="Teacher-student framework, PPO, and simulator chain">教师-学生框架、PPO 与仿真链路</h2>
+            <p data-i18n-en="My work covered the teacher-student parallel learning framework, PPO-based controller optimization, TRON1 setup in Isaac Sim, and the sim-to-sim plus hardware-validation chain through MuJoCo and real-robot experiments.">
+              我的工作覆盖教师-学生并行学习框架、基于 PPO 的控制器优化、TRON1 在 Isaac Sim 中的环境搭建，以及经由 MuJoCo 和真机实验构成的跨仿真与硬件验证链路。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Technical Route">技术路线</p>
+            <h2 data-i18n-en="Perception-first locomotion control">以感知为核心的足式控制逻辑</h2>
+            <p data-i18n-en="The teacher-student structure matters because it separates what is easy to optimize in simulation from what is actually deployable under perception constraints. PPO then provides the optimization backbone, while Isaac Sim and MuJoCo form the validation bridge before hardware experiments.">
+              教师-学生结构在这里的重要性，在于它把“在仿真里容易优化的东西”和“真正能在感知约束下部署的东西”区分开来。PPO 作为优化主干，而 Isaac Sim 与 MuJoCo 则一起构成了从训练到部署前验证的桥梁。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Why it was difficult">困难与价值</p>
+            <h2 data-i18n-en="The deployment chain matters more than a single benchmark">真正重要的是部署链路，而不是单一指标</h2>
+            <p data-i18n-en="What makes this project meaningful is not one isolated controller score, but the fact that it tried to connect training, simulator transfer, and hardware-side validation into one coherent path.">
+              这个项目真正有价值的地方，不是某一个孤立的控制指标，而是它试图把训练、跨仿真迁移和硬件验证连成一条完整链路。
+            </p>
+          </article>
+        </div>
+
+        <div class="story-media-column">
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Visual Materials">图像区</p>
+            <div class="empty-media">
+              <div>
+                <p class="mini-label" data-i18n-en="Reserved">预留位</p>
+                <p data-i18n-en="No public visual material is currently attached to this project page.">当前这页还没有接入公开可展示的图像材料。</p>
+              </div>
+            </div>
+            <p class="story-media-caption" data-i18n-en="The right-side visual space is intentionally preserved so the page layout stays consistent with the rest of the site.">右侧图像区即使暂时为空，也会保留下来，以保持整站详情页结构一致。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p><p class="footer-copy" data-i18n-en="Research project page for perception-driven legged robot locomotion control.">感知驱动的足式机器人运动控制项目页。</p></div>
+      <div class="footer-links"><a href="research-force-aware-manipulation.html" data-i18n-en="Previous project">上一项</a><a href="index.html#testi" data-i18n-en="Research">科研</a><a href="index.html" data-i18n-en="Home">首页</a></div>
+      <div class="footer-meta"><span>Contact: shihong.23@intl.zju.edu.cn</span><span><span data-i18n-en="Year">年份</span>: <span data-year></span></span></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

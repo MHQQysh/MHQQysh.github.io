@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ME370 八足投递机器人系统 | 袁诗鸿</title>
+  <meta name="description" content="袁诗鸿的 ME370 八足投递机器人系统项目页，展示 Klann linkage 行走、crank-slider 投放机构与系统集成优化。">
+  <link rel="icon" href="static/picture/avator.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body
+  data-page="projects"
+  data-title-zh="ME370 八足投递机器人系统 | 袁诗鸿"
+  data-title-en="ME370 Legged Delivery Robot System | Shihong Yuan"
+  data-description-zh="袁诗鸿的 ME370 八足投递机器人系统项目页，展示 Klann linkage 行走、crank-slider 投放机构与系统集成优化。"
+  data-description-en="Mechanical case study for the ME370 Legged Delivery Robot System, featuring Klann linkage locomotion, a crank-slider dispenser, and integrated drivetrain optimization."
+>
+  <header class="site-header">
+    <nav class="nav-shell container">
+      <a class="brand" href="index.html" aria-label="Shihong Yuan home">
+        <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
+        <span class="brand-copy"><span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span><span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span></button>
+      <div class="nav-menu" id="nav-menu" data-nav-menu>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
+          <a class="nav-link" href="index.html#testi" data-i18n-en="Research">科研</a>
+          <a class="nav-link" href="index.html#serv" data-page-link="projects" data-i18n-en="Computer Projects">计算机项目</a>
+          <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
+          <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+        </div>
+        <div class="lang-toggle" aria-label="Language switcher"><button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button><span>/</span><button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="project-dense-container page-heading">
+        <p class="eyebrow" data-i18n-en="Mechanical Project / ME370 / Team 48">机械项目 / ME370 / Team 48</p>
+        <h1 class="page-title" data-i18n-en="ME370 Legged Delivery Robot System">ME370 八足投递机器人系统</h1>
+        <p class="page-summary" data-i18n-en="A course-scale mechanical systems project that integrated Klann-linkage walking, a crank-slider dispensing mechanism, and a shared drivetrain into a single motor-driven delivery robot.">
+          这是一个课程级机械系统设计项目：把 Klann linkage 行走机构、crank-slider 投放机构和一套共享传动系统整合到同一台单电机驱动的投递机器人里。
+        </p>
+      </div>
+    </section>
+    <section class="page-shell">
+      <div class="project-dense-container story-layout">
+        <div class="story-text-column">
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Project Overview">项目概述</p>
+            <h2 data-i18n-en="A delivery robot built as a systems problem">把“会走”和“会投”同时做对的系统级项目</h2>
+            <p data-i18n-en="This project came out of ME370 and was much closer to a real systems problem than a single-mechanism exercise. The goal was to build an eight-legged robot that could walk autonomously and dispense small packages at roughly fixed intervals while moving.">
+              这个项目来自 ME370 课程，本质上更像一个真实的系统级问题，而不是单一机构设计练习。目标是做出一台能够自主行走、并在运动过程中按近似固定间距投放小包裹的八足机器人。
+            </p>
+            <p data-i18n-en="What made it difficult was not simply making a robot move. The real challenge was integrating a previously built dispensing mechanism into a mobile platform while still satisfying size, budget, safety, manufacturability, and maintenance constraints.">
+              真正的难点不只是“让机器人动起来”，而是把前一个阶段已经完成的投放机构整合进移动平台，同时还要满足尺寸、预算、安全性、可制造性和可维护性等工程约束。
+            </p>
+            <div class="meta-links">
+              <a class="text-link" href="static/projects/me370-spiderman/Team48_P2D5.pdf" target="_blank" rel="noreferrer" data-i18n-en="Open report PDF">打开报告 PDF</a>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="System Structure">系统结构</p>
+            <h2 data-i18n-en="Klann linkage, crank-slider, and a shared drivetrain">Klann linkage、crank-slider 与共享传动链</h2>
+            <p data-i18n-en="The robot can be understood through three main subsystems: the Klann-linkage walking system, the crank-slider dispenser, and the drivetrain plus housing system that integrates the motor, shafts, gears, acrylic plates, and package bay into a compact body.">
+              这台机器人主要由三个子系统组成：Klann linkage 行走系统、crank-slider 投放机构，以及把电机、轴、齿轮、亚克力板和包裹仓整合到一起的传动与壳体系统。
+            </p>
+            <p data-i18n-en="The most interesting design constraint was that a single motor had to support both locomotion and dispensing. That made gear-ratio design central to the whole project.">
+              最关键的工程约束，是只有一台电机却要同时负责行走和投放，这使得齿轮比设计成为整个项目的中心。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="My Contribution">我的贡献</p>
+            <h2 data-i18n-en="Integrated CAD modeling and ratio optimization">集成 CAD 建模与传动比优化</h2>
+            <p data-i18n-en="My main contribution sat at the system-integration level. I worked on integrated CAD modeling across the dispensing module, the leg mechanism, and the overall gear transmission, and I also focused on tuning the drivetrain around the 2 m dispensing target.">
+              我在这个项目里的主要贡献集中在系统集成层面。我负责投放模块、腿部机构和整体齿轮传动系统的集成 CAD 建模，同时围绕 2 米投放目标参与了传动比调优。
+            </p>
+            <p data-i18n-en="That work involved repeated disassembly, gear replacement, measurement, and reassembly rather than just drawing isolated components.">
+              这意味着我要不断拆装、更换齿轮、重新测量，再重新装回去，而不是只停留在单独画某一个零件的层面。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Challenges and Iteration">困难与迭代</p>
+            <h2 data-i18n-en="Dispensing stability, straight walking, and real-world debugging">投放稳定性、直线行走与真实调试</h2>
+            <p data-i18n-en="The first major issue was dispensing stability. The second was straight-line walking. The third was the gear-ratio iteration itself: this project had a real target, not just a vague threshold where movement was “good enough.”">
+              第一个核心问题是投放稳定性，第二个是直线行走，第三个则是传动比本身的迭代：这不是一个“能动就行”的项目，而是有明确目标的系统。
+            </p>
+            <p data-i18n-en="That is what makes the project worth keeping in the portfolio today: it was not only about making the robot operate, but about understanding why it drifted away from target and how to pull it back.">
+              这也是这个项目值得保留在作品集里的原因：它不只是让机器人“能工作”，而是要不断理解为什么它会偏离目标，以及如何把它重新拉回目标附近。
+            </p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label" data-i18n-en="Results Summary">结果摘要</p>
+            <h2 data-i18n-en="The metrics that mattered most">最值得保留下来的结果指标</h2>
+            <div class="results-grid">
+              <div class="stat-item"><strong>25.2 × 18 × 13.4 cm</strong><span class="timeline-copy" data-i18n-en="Overall dimensions">整体尺寸</span></div>
+              <div class="stat-item"><strong>214.2 cm</strong><span class="timeline-copy" data-i18n-en="Average drop interval">平均投放间距</span></div>
+              <div class="stat-item"><strong>200 cm</strong><span class="timeline-copy" data-i18n-en="Target interval">目标投放间距</span></div>
+              <div class="stat-item"><strong>4.49 m/min</strong><span class="timeline-copy" data-i18n-en="Average speed">平均速度</span></div>
+              <div class="stat-item"><strong>$98.86</strong><span class="timeline-copy" data-i18n-en="Final budget">最终预算</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="story-media-column">
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Main Photo">主照片</p>
+            <img src="static/projects/me370-spiderman/a4413e05b31b8785a223182253cc1189.jpg" alt="ME370 robot hero photo">
+            <p class="story-media-caption" data-i18n-en="A representative photo of the completed robot.">完整组装状态下最能代表项目的一张照片。</p>
+          </div>
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Detail Photos">细节照片</p>
+            <img src="static/projects/me370-spiderman/8791039f9126467371fd378ea28687ba.jpg" alt="ME370 robot detail photo">
+            <img src="static/projects/me370-spiderman/3bec66fb277035a5d0e024521961271a.jpg" alt="ME370 robot detail photo 2">
+            <img src="static/projects/me370-spiderman/f6bb235cd014665da96031f7d02d933f.jpg" alt="ME370 robot detail photo 3">
+            <p class="story-media-caption" data-i18n-en="Additional photos that show structure density and assembly complexity.">用于展示结构密度与总装复杂度的补充照片。</p>
+          </div>
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Video 01 / Final Demo">视频 01 / 最终演示</p>
+            <video src="static/projects/me370-spiderman/P2D4.mp4" controls></video>
+            <p class="story-media-caption" data-i18n-en="Full-system demonstration showing the robot in a more complete operating state.">展示机器人在较完整状态下进行整体运行的最终演示视频。</p>
+          </div>
+          <div class="story-media-card">
+            <p class="story-media-title" data-i18n-en="Video 02 / Motion and Dispensing">视频 02 / 运动与投放测试</p>
+            <video src="static/projects/me370-spiderman/e82fdcc6ed9bd5c96e3a1bb4c63fcc15.mp4" controls></video>
+            <video src="static/projects/me370-spiderman/7f5c3b27caa9339d6ce206a440aa1500.mp4" controls></video>
+            <p class="story-media-caption" data-i18n-en="Supplementary videos showing motion behavior, path stability, and dispensing rhythm.">补充展示行走状态、轨迹稳定性和投放节拍的测试视频。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p><p class="footer-copy" data-i18n-en="Case-study archive rebuilt from the original portfolio.">从原始作品集重建而来的项目档案页。</p></div>
+      <div class="footer-links"><a href="index.html" data-i18n-en="Home">首页</a><a href="index.html#testi" data-i18n-en="Research">科研</a><a href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a><a href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a><a href="index.html#blogs" data-i18n-en="Life">生活</a></div>
+      <div class="footer-meta"><span>Contact: shihong.23@intl.zju.edu.cn</span><span><span data-i18n-en="Year">年份</span>: <span data-year></span></span></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

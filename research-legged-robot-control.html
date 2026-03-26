@@ -22,9 +22,14 @@
     <nav class="nav-shell container">
       <a class="brand" href="index.html" aria-label="Shihong Yuan home">
         <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
-        <span class="brand-copy"><span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span><span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span></span>
+        <span class="brand-copy">
+          <span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span>
+          <span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-menu" id="nav-menu" data-nav-menu>
         <div class="nav-links">
           <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
@@ -32,70 +37,103 @@
           <a class="nav-link" href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
           <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
           <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+          <a class="nav-link" href="index.html#education" data-i18n-en="Education">教育经历</a>
+        
         </div>
-        <div class="lang-toggle" aria-label="Language switcher"><button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button><span>/</span><button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button></div>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button>
+          <span>/</span>
+          <button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="page-hero">
       <div class="project-dense-container page-heading">
         <p class="eyebrow" data-i18n-en="Research Project / 2026.03 - Present">科研项目 / 2026.03 - 至今</p>
         <h1 class="page-title" data-i18n-en="Perception-driven Legged Robot Locomotion Control">感知驱动的足式机器人运动控制</h1>
         <p class="page-summary" data-i18n-en="A deployable legged-locomotion project covering teacher-student learning, PPO optimization, TRON1 simulation in Isaac Sim, sim-to-sim transfer in MuJoCo, and hardware validation.">
-          一个面向可部署足式运动控制的项目，覆盖教师-学生学习、PPO 优化、TRON1 在 Isaac Sim 中的环境搭建、MuJoCo 跨仿真迁移以及真机验证。
+          这个项目关注的是面向真实部署的感知驱动足式运动控制：既要做教师-学生并行学习，也要用 PPO 优化控制器，还要把 TRON1 在 Isaac Sim 中搭起来，再通过 MuJoCo 做 sim-to-sim 迁移，最后落到真机验证。
         </p>
       </div>
     </section>
-    <section class="page-shell">
+
+    <section class="page-shell lang-page is-active" data-lang-page="zh">
       <div class="project-dense-container story-layout">
         <div class="story-text-column">
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Lab and Advisors">实验室与导师</p>
-            <h2 data-i18n-en="Research Context">研究背景</h2>
-            <p data-i18n-en="Lab: ZJU-UIUC Physical Intelligence Lab. Advisors: Prof. Chen Ye and Prof. Yang Liangjing.">
-              实验室：ZJU-UIUC 物理智能实验室。导师：谌烨教授 / 杨量景教授。
-            </p>
-            <p data-i18n-en="The project focused on a core deployment question in legged robotics: how to move from simulator-heavy training to policies that can remain stable once perception becomes the dominant input channel.">
-              这个项目关注的是足式机器人里最核心的一个部署问题：如何从 heavily simulator-based 的训练，过渡到真正依赖感知输入、且在实际环境中仍然保持稳定的控制策略。
-            </p>
+            <p class="mini-label">实验室与导师</p>
+            <h2>项目背景与总体工作</h2>
+            <p>实验室：ZJU-UIUC 物理智能实验室。导师：谌烨教授 / 杨量景教授。</p>
+            <p>在 ZJU-UIUC 物理智能实验室参与感知驱动的足式机器人运动控制研究期间，我主要围绕感知输入下的运动策略训练、仿真环境搭建、sim-to-sim 迁移以及真实硬件验证展开工作。项目以 TRON1 为平台，结合 Isaac Sim、MuJoCo 和 PPO 强化学习框架，逐步建立起从训练、验证到部署的完整闭环。</p>
+            <p>在这个过程中，我不仅完成了已有系统的复现和搭建，也持续推动训练框架和迁移流程的改进，包括：将原有简单 teacher-student PPO 方案扩展为 concurrent teacher-student 并行训练框架，系统性解决了 sim-to-sim 迁移中的关键工程问题，并逐渐形成了面向强化学习控制任务的“调参 - 记录 - 分析 - 修正”的迭代方法。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="My Role">我的职责</p>
-            <h2 data-i18n-en="Teacher-student framework, PPO, and simulator chain">教师-学生框架、PPO 与仿真链路</h2>
-            <p data-i18n-en="My work covered the teacher-student parallel learning framework, PPO-based controller optimization, TRON1 setup in Isaac Sim, and the sim-to-sim plus hardware-validation chain through MuJoCo and real-robot experiments.">
-              我的工作覆盖教师-学生并行学习框架、基于 PPO 的控制器优化、TRON1 在 Isaac Sim 中的环境搭建，以及经由 MuJoCo 和真机实验构成的跨仿真与硬件验证链路。
-            </p>
+            <p class="mini-label">问题与解决 1</p>
+            <h2>reward tuning</h2>
+            <p>项目初期，最大的挑战不是“代码能否跑起来”，而是策略行为是否能按照预期逐步收敛。足式机器人强化学习中，reward 设计和训练超参数高度耦合，常见问题包括：机器人能短时间保持平衡，但无法持续稳定运动；有时能走，但走不直，方向性差；对速度指令、转向指令等 command 的响应不理想，策略可控性弱；训练不同轮次之间结果波动较大，复现性不稳定。</p>
+            <p>我的解决方式是逐渐形成一套更清晰的调试节奏：先保平衡，再控方向，最后优化 command tracking。前期重点通过调整姿态稳定、足端接触、动作平滑等 reward 项，让机器人先学会“站稳”；在此基础上再增加速度跟踪、航向保持等项，逐渐引导它“走直线”；最后再针对指令响应质量进行精修，提高控制的一致性和精确度。</p>
+            <p>在这个过程中，我不再只依赖“感觉调参”，而是逐渐养成了每次实验记录和总结的习惯，明确记录 reward 配置变化、关键超参数变化、训练曲线和行为表现，以及失败案例和可能原因。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Technical Route">技术路线</p>
-            <h2 data-i18n-en="Perception-first locomotion control">以感知为核心的足式控制逻辑</h2>
-            <p data-i18n-en="The teacher-student structure matters because it separates what is easy to optimize in simulation from what is actually deployable under perception constraints. PPO then provides the optimization backbone, while Isaac Sim and MuJoCo form the validation bridge before hardware experiments.">
-              教师-学生结构在这里的重要性，在于它把“在仿真里容易优化的东西”和“真正能在感知约束下部署的东西”区分开来。PPO 作为优化主干，而 Isaac Sim 与 MuJoCo 则一起构成了从训练到部署前验证的桥梁。
-            </p>
+            <p class="mini-label">问题与解决 2</p>
+            <h2>sim-to-sim</h2>
+            <p>第一次做完整的 sim-to-sim 迁移时，最困难的地方不是流程本身，而是策略迁移后表现不对，但一开始并不知道错在哪里。这类问题在机器人里很典型：系统能跑，接口也通，但行为不符合预期。要找到根因，必须把那些“看起来都差不多”的因素一个个排除。</p>
+            <p>第一个关键问题是控制频率不一致。Isaac Sim 与 MuJoCo 中，如果控制周期、仿真步长或动作更新周期不一致，策略实际感受到的动力学响应就会明显变化，最终表现为动作滞后和性能下降。我的处理方式是对齐 physics step、control step、policy inference step，并重新核对动作保持机制是否一致。</p>
+            <p>第二个关键问题是关节映射不一致。不同仿真器中的关节顺序与语义并不天然一致，如果这个映射层没有处理好，策略输出虽然“正常”，但实际送到的是错误的关节。为了解决这个问题，我手动核对了各仿真器中的关节定义、名称和顺序，建立统一的 joint mapping，并做了单关节动作可视化验证。</p>
+            <p>第三个问题更偏算法实现层：PPO 中 old policy / new policy 的使用顺序错误。一开始没有完全吃透 PPO 的更新逻辑，在实现或检查过程中，曾把本来应该由旧策略计算的部分误用了新策略，导致 ratio 估计不正确，训练始终异常。我的解决方式是回到 PPO 原始公式，重新梳理 rollout、buffer、loss 和更新顺序，逐行核对后定位并修正了这个时序问题。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Why it was difficult">困难与价值</p>
-            <h2 data-i18n-en="The deployment chain matters more than a single benchmark">真正重要的是部署链路，而不是单一指标</h2>
-            <p data-i18n-en="What makes this project meaningful is not one isolated controller score, but the fact that it tried to connect training, simulator transfer, and hardware-side validation into one coherent path.">
-              这个项目真正有价值的地方，不是某一个孤立的控制指标，而是它试图把训练、跨仿真迁移和硬件验证连成一条完整链路。
-            </p>
+            <p class="mini-label">问题与解决 3</p>
+            <h2>nonconcurrent ts -&gt; concurrent ts</h2>
+            <p>项目最初使用的是 limx tron1-isaaclab 源码，但该版本主要基于非并行的 teacher-student 简化 PPO 流程。虽然能完成基础训练，但在感知驱动场景下，训练效率和最终效果都还有明显提升空间。</p>
+            <p>这个阶段的难点不是单点 bug，而是要真正理解 Isaac Lab 的整体框架并找到可以改动而不破坏系统正确性的位置。因为这里涉及环境封装、观测构造、rollout 采样、teacher/student 输入分流、policy 更新和训练调度等多个环节。</p>
+            <p>我的解决方式是系统阅读 Isaac Lab 的训练框架，梳理 observation pipeline、privileged information 和 onboard perception 的分流方式、PPO rollout 与 update 的组织方式，以及 teacher/student 的数据流和参数流耦合关系。在此基础上，我将原有简单方案扩展为 concurrent teacher-student model，使教师策略和学生策略在训练过程中更高效协同。</p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label">问题与解决 4</p>
+            <h2>ppo understanding</h2>
+            <p>PPO 这类强化学习算法，如果只看公式，很容易停留在“符号看懂了，但不知道工程里怎么落地”的状态。尤其是在项目早期，只看数学推导会觉得抽象而割裂，很难形成可操作的理解。</p>
+            <p>我后来在一次组会准备中，系统梳理了 PPO 的工程实践与数学逻辑。与其单纯从推导出发，我更多采用了：对照代码看模块，对照训练输出看算法行为，再回到数学公式理解每个设计的目的。比如为什么需要 old policy、clipping 限制的是什么、advantage 为什么会改变更新方向，以及 rollout buffer 中每一项如何映射到最终 loss。</p>
+            <p>这部分的解决方式其实不是“再多看几遍公式”，而是强制自己在代码、输出和数学之间来回穿梭，直到这三者对应起来为止。</p>
+          </article>
+
+          <article class="story-card">
+            <p class="mini-label">问题与解决 5</p>
+            <h2>sim-to-real</h2>
+            <p>第一个关键问题是现实硬件中的传感器噪声和状态估计误差远大于理想仿真环境。即使策略在仿真里表现稳定，一旦 IMU、接触状态或姿态估计出现偏差，动作输出就可能迅速失稳。我的应对方式是，在训练和验证阶段尽量引入更贴近真实部署的感知输入形式，并通过跨仿真器验证来提前暴露策略对状态误差的敏感性。</p>
+            <p>第二个关键问题是仿真中的地形、接触和执行延迟与真实机器人并不完全一致。策略在仿真里学到的“最优动作”不一定能够直接迁移到真机。为此，我把 MuJoCo 作为中间验证层，先做 sim-to-sim 检查，再推进到真实机器人实验，用分层验证的方式减少一次性直接上真机带来的风险。</p>
           </article>
         </div>
 
         <div class="story-media-column">
           <div class="story-media-card">
-            <p class="story-media-title" data-i18n-en="Visual Materials">图像区</p>
+            <p class="story-media-title">视频 01 / 仿真</p>
+            <video src="static/research/legged-control/sim.mp4" controls></video>
+            <p class="story-media-caption">用于展示足式机器人在仿真环境中的控制与运动表现。</p>
+          </div>
+
+          <div class="story-media-card">
+            <p class="story-media-title">视频 02 / sim-to-sim</p>
+            <video src="static/research/legged-control/sim-to-sim.mp4" controls></video>
+            <p class="story-media-caption">用于展示跨仿真器迁移后的运动状态和控制稳定性。</p>
+          </div>
+
+          <div class="story-media-card">
+            <p class="story-media-title">图像区</p>
             <div class="empty-media">
               <div>
-                <p class="mini-label" data-i18n-en="Reserved">预留位</p>
-                <p data-i18n-en="No public visual material is currently attached to this project page.">当前这页还没有接入公开可展示的图像材料。</p>
+                <p class="mini-label">预留位</p>
+                <p>当前这页还没有接入公开可展示的图像材料，后续可以继续补充训练曲线、系统框图或真机照片。</p>
               </div>
             </div>
-            <p class="story-media-caption" data-i18n-en="The right-side visual space is intentionally preserved so the page layout stays consistent with the rest of the site.">右侧图像区即使暂时为空，也会保留下来，以保持整站详情页结构一致。</p>
+            <p class="story-media-caption">即使暂时没有图片，这个图像区也会保留，用来维持整页左文右图的统一结构。</p>
           </div>
         </div>
       </div>

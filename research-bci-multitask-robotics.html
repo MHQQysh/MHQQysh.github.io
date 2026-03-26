@@ -22,9 +22,14 @@
     <nav class="nav-shell container">
       <a class="brand" href="index.html" aria-label="Shihong Yuan home">
         <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
-        <span class="brand-copy"><span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span><span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span></span>
+        <span class="brand-copy">
+          <span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span>
+          <span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-menu" id="nav-menu" data-nav-menu>
         <div class="nav-links">
           <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
@@ -32,85 +37,94 @@
           <a class="nav-link" href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
           <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
           <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+          <a class="nav-link" href="index.html#education" data-i18n-en="Education">教育经历</a>
+        
         </div>
-        <div class="lang-toggle" aria-label="Language switcher"><button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button><span>/</span><button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button></div>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button>
+          <span>/</span>
+          <button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="page-hero">
       <div class="project-dense-container page-heading">
         <p class="eyebrow" data-i18n-en="Research Project / 2025.06 - Present">科研项目 / 2025.06 - 至今</p>
         <h1 class="page-title" data-i18n-en="BCI-guided Multi-task Robot Operation">脑机接口引导的多任务机器人操作</h1>
-        <p class="page-summary" data-i18n-en="A system-level robotics project connecting EEG-based user intent, LLM + LightGCN task routing, and camera-geometry plus ESDF spatial perception.">
-          一个系统级机器人项目，把 EEG 高层用户意图、LLM + LightGCN 任务路由，以及基于相机几何和 ESDF 的空间感知真正接在一起。
+        <p class="page-summary" data-i18n-en="A robotics project that connects EEG-based high-level user intent, LLM + LightGCN task routing, and geometry-aware spatial perception into one executable system.">
+          一个机器人系统项目，把 EEG 高层用户意图、LLM + LightGCN 任务路由，以及几何驱动的空间感知接成一条真正可执行的链路。
         </p>
       </div>
     </section>
+
     <section class="page-shell">
       <div class="project-dense-container story-layout">
         <div class="story-text-column">
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Lab and Advisor">实验室与导师</p>
-            <h2 data-i18n-en="Research Context">研究背景</h2>
-            <p data-i18n-en="Lab: Zhejiang University Human-centered Manufacturing Lab. Advisor: Prof. Wang Baicun.">
-              实验室：浙江大学人本智造实验室。导师：王柏村教授。
-            </p>
-            <p data-i18n-en="The project was designed around a system-level question: how a user's high-level intention can enter a robot system and become a structured task dispatch supported by perception and planning.">
-              这个项目围绕一个系统级问题展开：高层用户意图如何进入机器人系统，并最终变成由感知和规划共同支持的结构化任务调度。
-            </p>
+            <p class="mini-label">background</p>
+            <h2>研究背景</h2>
+            <p>实验室：浙江大学人本智造实验室。导师：王柏村教授。</p>
+            <p>这个项目面向的是多任务机器人系统中的一个核心问题：高层用户意图如何进入系统，并最终变成可执行的任务调度，而不是停留在单独的交互信号或单独的感知模块里。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="My Role">我的职责</p>
-            <h2 data-i18n-en="Task Routing, EEG Input, and Spatial Perception">任务路由、EEG 输入与空间感知</h2>
-            <p data-i18n-en="My work covered three tightly connected parts: an LLM + LightGCN task-routing module, EEG as high-level user input, and camera-calibration plus ESDF-based spatial perception.">
-              我负责三个彼此紧密耦合的部分：LLM + LightGCN 任务路由模块、EEG 作为高层用户输入，以及基于相机标定与 ESDF 的空间感知。
-            </p>
-            <p data-i18n-en="The project mattered because these components are often described separately in robotics, but the real challenge is connecting them into one usable system.">
-              这个项目真正有价值的地方在于：这些部分在机器人系统里经常被分开叙述，但真正困难的是把它们接成一个能工作的整体。
-            </p>
+            <p class="mini-label">scope</p>
+            <h2>我的职责</h2>
+            <p>我的工作主要覆盖三部分：基于 LLM + LightGCN 的任务路由模块、将 EEG 用作高层用户输入，以及通过相机标定和 ESDF 表示构建空间感知侧输入。</p>
+            <p>换句话说，我负责的不是一个孤立的小模型，而是“意图输入 - 任务路由 - 感知支撑”这条链路中的关键桥接部分。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Technical Route">技术路线</p>
-            <h2 data-i18n-en="A bridge from intent to execution">从意图到执行的桥梁</h2>
-            <p data-i18n-en="EEG was positioned as high-level user input for task triggering and scenario selection rather than low-level continuous control. The routing module then classified and dispatched tasks, while geometry-aware perception provided the spatial representation needed by the downstream system.">
-              EEG 被放在高层用户输入的位置上，主要承担任务触发和场景选择，而不是底层连续控制。之后由路由模块完成任务分类与分发，再由几何感知提供空间表示，支撑下游系统真正执行。
-            </p>
+            <p class="mini-label">pipeline</p>
+            <h2>技术路径</h2>
+            <p>项目中，EEG 被放在高层输入位置上，承担任务触发和场景选择，而不是底层连续控制。之后由路由模块完成任务分类与分发，再由空间感知系统提供几何层面的环境表示，支撑下游规划和执行。</p>
+            <p>这种组织方式的重点，不是单独做强某一层，而是让整条链路保持连续，避免“任务理解”和“环境理解”彼此脱节。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Why it was difficult">困难与价值</p>
-            <h2 data-i18n-en="Why this is a systems problem">为什么这是系统问题</h2>
-            <p data-i18n-en="The difficulty was not just in building a routing model or processing EEG independently. It was in deciding where these signals belong in the stack, and how to keep the path from human intent to geometry-aware robot execution continuous.">
-              难点不只是单独做一个路由模型，或者单独处理 EEG，而在于确定这些信息究竟应该放在系统的哪一层，以及如何让“用户意图 - 感知 - 机器人执行”这条链保持连续。
-            </p>
+            <p class="mini-label">difficulty</p>
+            <h2>问题与解决</h2>
+            <p>难点不只是训练一个路由模型，或者单独处理 EEG，而在于确定这些信息在机器人系统里应该处于哪一层，以及如何让从用户意图到几何感知再到执行的路径保持一致。</p>
+            <p>我的处理方式是同时覆盖路由和感知这两个相邻层级，而不是只在单一模块上做优化。这样系统在实际使用时，意图理解、任务分发和空间感知才能真正对齐。</p>
           </article>
         </div>
 
         <div class="story-media-column">
           <div class="story-media-card">
-            <p class="story-media-title" data-i18n-en="Visual Materials">图像区</p>
+            <p class="story-media-title">图像区</p>
             <div class="empty-media">
               <div>
-                <p class="mini-label" data-i18n-en="Reserved">预留位</p>
-                <p data-i18n-en="No public visual material is currently attached to this project page.">当前这页还没有接入公开可展示的图像材料。</p>
+                <p class="mini-label">预留位</p>
+                <p>当前这页还没有接入公开可展示的图像材料。</p>
               </div>
             </div>
-            <p class="story-media-caption" data-i18n-en="This right column is intentionally kept as visual space so the page structure stays consistent with the rest of the site.">右侧这一列即使暂时没有图，也仍然保留为图像区，以保持整站结构一致。</p>
+            <p class="story-media-caption">右侧图像区即使暂时为空，也保留下来，保证和其他科研页结构一致。</p>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p><p class="footer-copy" data-i18n-en="Research project page for BCI-guided multi-task robotics.">脑机接口引导的多任务机器人操作项目页。</p></div>
-      <div class="footer-links"><a href="index.html#testi" data-i18n-en="Research">科研</a><a href="research-force-aware-manipulation.html" data-i18n-en="Next project">下一项</a></div>
-      <div class="footer-meta"><span>Contact: shihong.23@intl.zju.edu.cn</span><span><span data-i18n-en="Year">年份</span>: <span data-year></span></span></div>
+      <div>
+        <p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p>
+        <p class="footer-copy" data-i18n-en="Research project page for BCI-guided multi-task robotics.">脑机接口引导的多任务机器人操作项目页。</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#testi" data-i18n-en="Research">科研</a>
+        <a href="research-force-aware-manipulation.html" data-i18n-en="Next project">下一项</a>
+      </div>
+      <div class="footer-meta">
+        <span>Contact: shihong.23@intl.zju.edu.cn</span>
+        <span><span data-i18n-en="Year">年份</span>: <span data-year></span></span>
+      </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

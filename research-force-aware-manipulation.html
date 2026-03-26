@@ -22,9 +22,14 @@
     <nav class="nav-shell container">
       <a class="brand" href="index.html" aria-label="Shihong Yuan home">
         <span class="brand-mark"><img src="static/picture/avator.jpg" alt="Shihong Yuan avatar"></span>
-        <span class="brand-copy"><span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span><span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span></span>
+        <span class="brand-copy">
+          <span class="brand-title" data-i18n-en="Shihong Yuan">袁诗鸿</span>
+          <span class="brand-subtitle" data-i18n-en="Portfolio archive">作品集档案</span>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-menu" id="nav-menu" data-nav-menu>
         <div class="nav-links">
           <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
@@ -32,82 +37,92 @@
           <a class="nav-link" href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
           <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
           <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
+          <a class="nav-link" href="index.html#education" data-i18n-en="Education">教育经历</a>
+        
         </div>
-        <div class="lang-toggle" aria-label="Language switcher"><button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button><span>/</span><button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button></div>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button>
+          <span>/</span>
+          <button class="lang-toggle-btn" type="button" data-lang-option="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="page-hero">
       <div class="project-dense-container page-heading">
         <p class="eyebrow" data-i18n-en="Research Project / 2025.06 - 2025.08">科研项目 / 2025.06 - 2025.08</p>
         <h1 class="page-title" data-i18n-en="Force-aware Diffusion Policy for Robot Manipulation">面向机器人操作的力矩感知扩散策略</h1>
-        <p class="page-summary" data-i18n-en="A manipulation project that pushes diffusion-policy-style action generation closer to contact-rich execution by explicitly bringing torque-aware commands into the control space.">
+        <p class="page-summary" data-i18n-en="A manipulation project that pushes diffusion-policy-style action generation closer to contact-rich execution by explicitly bringing torque-aware control into the action space.">
           一个机器人操作项目，把扩散策略式的动作生成真正推进到接触丰富的执行阶段，并显式把力矩感知相关控制带进动作空间。
         </p>
       </div>
     </section>
+
     <section class="page-shell">
       <div class="project-dense-container story-layout">
         <div class="story-text-column">
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Lab and Advisors">实验室与导师</p>
-            <h2 data-i18n-en="Research Context">研究背景</h2>
-            <p data-i18n-en="Lab: ZJU-UIUC Physical Intelligence Lab. Advisors: Prof. Chen Ye and Prof. Yang Liangjing.">
-              实验室：ZJU-UIUC 物理智能实验室。导师：谌烨教授 / 杨量景教授。
-            </p>
-            <p data-i18n-en="The project asked a practical question: how to make a diffusion-based manipulation policy behave better once contact, friction, and force-sensitive execution become important.">
-              这个项目面对的是一个很实际的问题：当接触、摩擦和力相关执行变得重要时，如何让扩散策略式的操作控制真正变得更可用。
-            </p>
+            <p class="mini-label">background</p>
+            <h2>研究背景</h2>
+            <p>实验室：ZJU-UIUC 物理智能实验室。导师：谌烨教授 / 杨量景教授。</p>
+            <p>这个项目面对的是一个很实际的问题：当接触、摩擦和力相关执行变得重要时，如何让扩散策略式的操作控制真正变得更可用。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="My Role">我的职责</p>
-            <h2 data-i18n-en="Framework, torque-aware control, and execution chain">框架、力矩控制与执行链路</h2>
-            <p data-i18n-en="My work focused on the diffusion-policy manipulation framework itself, on introducing torque-aware commands into the action design, and on connecting the training/evaluation workflow to execution on a UR5e-series arm.">
-              我的工作重点放在扩散策略操作框架本身、力矩感知动作设计，以及把训练 / 评估工作流真正接到 UR5e 系列机械臂执行链路上。
-            </p>
+            <p class="mini-label">scope</p>
+            <h2>我的职责</h2>
+            <p>我的工作重点放在扩散策略操作框架本身、力矩感知动作设计，以及把训练 / 评估工作流真正接到 UR5e 系列机械臂执行链路上。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Technical Route">技术路线</p>
-            <h2 data-i18n-en="From action generation toward contact-aware execution">从动作生成走向接触感知执行</h2>
-            <p data-i18n-en="The key move in this project was not just using a diffusion-policy-style backbone, but extending it so the action space could express force-related control more directly. That is what moves the method from elegant generation toward physically meaningful execution.">
-              这个项目真正关键的一步，不只是套用扩散策略框架，而是让动作空间本身能够更直接地表达与力相关的控制信息。这一步把方法从“优雅生成”推进到了“对物理执行真正有意义”的阶段。
-            </p>
+            <p class="mini-label">pipeline</p>
+            <h2>技术路径</h2>
+            <p>这个项目真正关键的一步，不只是套用扩散策略框架，而是让动作空间本身能够更直接地表达与力相关的控制信息。这一步把方法从“优雅生成”推进到了“对物理执行真正有意义”的阶段。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label" data-i18n-en="Why it was difficult">困难与价值</p>
-            <h2 data-i18n-en="Execution is harder than generation">执行总是比生成更难</h2>
-            <p data-i18n-en="Generating plausible trajectories is only the first half of the problem. Once a robot arm touches the world, the policy needs to remain stable under contact, friction, and force-sensitive interaction. That is why this project is worth keeping in the portfolio.">
-              能生成看起来合理的轨迹，只是问题的一半。一旦机械臂真正接触世界，策略就必须在接触、摩擦和力敏感交互下保持稳定。这也是这个项目值得保留在作品集里的原因。
-            </p>
+            <p class="mini-label">difficulty</p>
+            <h2>问题与解决</h2>
+            <p>难点不在于是否能生成轨迹，而在于这些轨迹一旦进入真实接触场景，是否还能保持稳定。我的解决方式是把“动作生成”进一步推进到“力矩感知执行”，让策略输出不只是路径，更包含与交互相关的控制意图。</p>
           </article>
         </div>
 
         <div class="story-media-column">
           <div class="story-media-card">
-            <p class="story-media-title" data-i18n-en="Visual Materials">图像区</p>
+            <p class="story-media-title">图像区</p>
             <div class="empty-media">
               <div>
-                <p class="mini-label" data-i18n-en="Reserved">预留位</p>
-                <p data-i18n-en="No public visual material is currently attached to this project page.">当前这页还没有接入公开可展示的图像材料。</p>
+                <p class="mini-label">预留位</p>
+                <p>当前这页还没有接入公开可展示的图像材料。</p>
               </div>
             </div>
-            <p class="story-media-caption" data-i18n-en="The page still reserves the right-side media column so its structure stays aligned with the rest of the project pages.">即使目前没有图像，这一页仍然保留右侧图像区，保证和其他项目页的结构一致。</p>
+            <p class="story-media-caption">右侧图像区即使暂时为空，也保留下来，保证和其他科研页结构一致。</p>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p><p class="footer-copy" data-i18n-en="Research project page for force-aware robot manipulation.">面向机器人操作的力矩感知扩散策略项目页。</p></div>
-      <div class="footer-links"><a href="research-bci-multitask-robotics.html" data-i18n-en="Previous project">上一项</a><a href="index.html#testi" data-i18n-en="Research">科研</a><a href="research-legged-robot-control.html" data-i18n-en="Next project">下一项</a></div>
-      <div class="footer-meta"><span>Contact: shihong.23@intl.zju.edu.cn</span><span><span data-i18n-en="Year">年份</span>: <span data-year></span></span></div>
+      <div>
+        <p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p>
+        <p class="footer-copy" data-i18n-en="Research project page for force-aware robot manipulation.">面向机器人操作的力矩感知扩散策略项目页。</p>
+      </div>
+      <div class="footer-links">
+        <a href="research-bci-multitask-robotics.html" data-i18n-en="Previous project">上一项</a>
+        <a href="index.html#testi" data-i18n-en="Research">科研</a>
+        <a href="research-legged-robot-control.html" data-i18n-en="Next project">下一项</a>
+      </div>
+      <div class="footer-meta">
+        <span>Contact: shihong.23@intl.zju.edu.cn</span>
+        <span><span data-i18n-en="Year">年份</span>: <span data-year></span></span>
+      </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

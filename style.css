@@ -1110,6 +1110,18 @@ body[data-page="home"] .container {
   width: min(calc(100% - 88px), 1040px);
 }
 
+body[data-page="home"] .section {
+  padding: 62px 0;
+}
+
+body[data-page="home"] .section-header {
+  margin-bottom: 20px;
+}
+
+body[data-page="home"] .section-title {
+  font-size: clamp(1.8rem, 3.2vw, 3.1rem);
+}
+
 .home-header {
   background: rgba(255, 252, 246, 0.9);
 }
@@ -1929,8 +1941,8 @@ body[data-page="home"] .container {
     width: min(calc(100% - 120px), 1040px);
   }
 
-  .section {
-    padding: 92px 0;
+  body[data-page="home"] .section {
+    padding: 74px 0;
   }
 
   .home-hero-grid {

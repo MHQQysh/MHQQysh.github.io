@@ -1111,15 +1111,15 @@ body[data-page="home"] .container {
 }
 
 body[data-page="home"] .section {
-  padding: 62px 0;
+  padding: 46px 0;
 }
 
 body[data-page="home"] .section-header {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 body[data-page="home"] .section-title {
-  font-size: clamp(1.8rem, 3.2vw, 3.1rem);
+  font-size: clamp(1.55rem, 2.7vw, 2.6rem);
 }
 
 .home-header {
@@ -1614,13 +1614,13 @@ body[data-page="home"] .section-title {
 
 .minimal-project-list {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .minimal-project-item {
   display: grid;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 8px;
+  padding: 9px 0;
   border-top: 1px solid rgba(114, 88, 51, 0.16);
 }
 
@@ -1630,16 +1630,16 @@ body[data-page="home"] .section-title {
 
 .minimal-project-link {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   color: inherit;
 }
 
 .minimal-project-thumb {
   width: 100%;
-  max-width: 108px;
+  max-width: 92px;
   aspect-ratio: 1.2 / 1;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 12px;
   border: 1px solid rgba(114, 88, 51, 0.16);
   background: rgba(255, 252, 246, 0.9);
   box-shadow: var(--shadow-soft);
@@ -1655,10 +1655,10 @@ body[data-page="home"] .section-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 8px;
   color: var(--color-accent);
   font-family: "DM Sans", "Noto Sans SC", sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1669,26 +1669,27 @@ body[data-page="home"] .section-title {
 
 .minimal-project-content {
   display: grid;
-  gap: 4px;
+  gap: 3px;
   align-content: center;
 }
 
 .minimal-project-title {
   margin: 0;
   font-family: "Playfair Display", "Noto Serif SC", Georgia, serif;
-  font-size: 1.28rem;
-  line-height: 1.14;
+  font-size: 1.16rem;
+  line-height: 1.1;
 }
 
 .minimal-project-meta {
   color: var(--color-ink-soft);
   font-family: "DM Sans", "Noto Sans SC", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .minimal-project-desc {
   color: var(--color-muted);
-  font-size: 0.96rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .minimal-project-cta {
@@ -1910,7 +1911,7 @@ body[data-page="home"] .section-title {
   }
 
   .minimal-project-link {
-    grid-template-columns: 108px minmax(0, 1fr);
+    grid-template-columns: 92px minmax(0, 1fr);
     align-items: center;
   }
 
@@ -1942,7 +1943,7 @@ body[data-page="home"] .section-title {
   }
 
   body[data-page="home"] .section {
-    padding: 74px 0;
+    padding: 54px 0;
   }
 
   .home-hero-grid {

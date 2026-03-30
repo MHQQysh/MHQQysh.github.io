@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>科研项目：脑机接口引导的多任务机器人操作 | 袁诗鸿</title>
-  <meta name="description" content="袁诗鸿的科研项目页：脑机接口引导的多任务机器人操作。">
+  <title>科研项目 | 02 脑机接口引导的多任务机械臂操作 | 袁诗鸿</title>
+  <meta name="description" content="02 脑机接口引导的多任务机械臂操作">
   <link rel="icon" href="static/picture/avator.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,10 @@
 </head>
 <body
   data-page="research"
-  data-title-zh="科研项目：脑机接口引导的多任务机器人操作 | 袁诗鸿"
-  data-title-en="Research Project | BCI-guided Multi-task Robot Operation | Shihong Yuan"
-  data-description-zh="袁诗鸿的科研项目页：脑机接口引导的多任务机器人操作。"
-  data-description-en="Research page for Shihong Yuan's BCI-guided multi-task robot operation project."
+  data-title-zh="科研项目 | 02 脑机接口引导的多任务机械臂操作 | 袁诗鸿"
+  data-title-en="Research Project | 02 BCI-guided Multi-task Robotic Arm Operation | Shihong Yuan"
+  data-description-zh="02 脑机接口引导的多任务机械臂操作"
+  data-description-en="Research page for 02 BCI-guided Multi-task Robotic Arm Operation."
 >
   <header class="site-header">
     <nav class="nav-shell container">
@@ -34,11 +34,9 @@
         <div class="nav-links">
           <a class="nav-link" href="index.html" data-page-link="home" data-i18n-en="Home">首页</a>
           <a class="nav-link" href="index.html#testi" data-i18n-en="Research">科研</a>
-          <a class="nav-link" href="index.html#serv" data-i18n-en="Computer Projects">计算机项目</a>
-          <a class="nav-link" href="index.html#ports" data-i18n-en="Mechanical Projects">机械项目</a>
+          <a class="nav-link" href="index.html#serv" data-i18n-en="Projects">项目</a>
           <a class="nav-link" href="index.html#blogs" data-i18n-en="Life">生活</a>
           <a class="nav-link" href="index.html#education" data-i18n-en="Education">教育经历</a>
-        
         </div>
         <div class="lang-toggle" aria-label="Language switcher">
           <button class="lang-toggle-btn" type="button" data-lang-option="zh">中文</button>
@@ -52,11 +50,14 @@
   <main>
     <section class="page-hero">
       <div class="project-dense-container page-heading">
-        <p class="eyebrow" data-i18n-en="Research Project / 2025.06 - Present">科研项目 / 2025.06 - 至今</p>
-        <h1 class="page-title" data-i18n-en="BCI-guided Multi-task Robot Operation">脑机接口引导的多任务机器人操作</h1>
-        <p class="page-summary" data-i18n-en="A robotics project that connects EEG-based high-level user intent, LLM + LightGCN task routing, and geometry-aware spatial perception into one executable system.">
-          一个机器人系统项目，把 EEG 高层用户意图、LLM + LightGCN 任务路由，以及几何驱动的空间感知接成一条真正可执行的链路。
+        <p class="eyebrow">科研经历</p>
+        <h1 class="page-title" data-i18n-en="02 BCI-guided Multi-task Robotic Arm Operation">02 脑机接口引导的多任务机械臂操作</h1>
+        <p class="page-summary">
+          目标：识别场景为点云，图网络 LLM 推荐执行任务，用户用脑机选择任务，机械臂抓取物体特征点放到另外特征位置执行任务。
         </p>
+        <div class="meta-links">
+          <span class="pill">2025.06-至今</span>
+        </div>
       </div>
     </section>
 
@@ -64,44 +65,35 @@
       <div class="project-dense-container story-layout">
         <div class="story-text-column">
           <article class="story-card">
-            <p class="mini-label">background</p>
-            <h2>研究背景</h2>
-            <p>实验室：浙江大学人本智造实验室。导师：王柏村教授。</p>
-            <p>这个项目面向的是多任务机器人系统中的一个核心问题：高层用户意图如何进入系统，并最终变成可执行的任务调度，而不是停留在单独的交互信号或单独的感知模块里。</p>
+            <h2>01 项目目的</h2>
+            <p>目标：识别场景为点云，图网络 LLM 推荐执行任务，用户用脑机选择任务，机械臂抓取物体特征点放到另外特征位置执行任务。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label">scope</p>
-            <h2>我的职责</h2>
-            <p>我的工作主要覆盖三部分：基于 LLM + LightGCN 的任务路由模块、将 EEG 用作高层用户输入，以及通过相机标定和 ESDF 表示构建空间感知侧输入。</p>
-            <p>换句话说，我负责的不是一个孤立的小模型，而是“意图输入 - 任务路由 - 感知支撑”这条链路中的关键桥接部分。</p>
+            <h2>02 个人贡献</h2>
+            <p>LLM+LightGCN 分类操作任务，实现给一个没见过的物体，也能想到可能对应的任务让用户来选。</p>
+            <p>相机标定和 esdf 建图得到物体点云位置的仿真工作。</p>
+            <p>EEG 读取脑电信息输出用户的选择的模型训练。</p>
+            <p>机械臂执行这部分的仿真工作。</p>
           </article>
 
           <article class="story-card">
-            <p class="mini-label">pipeline</p>
-            <h2>技术路径</h2>
-            <p>项目中，EEG 被放在高层输入位置上，承担任务触发和场景选择，而不是底层连续控制。之后由路由模块完成任务分类与分发，再由空间感知系统提供几何层面的环境表示，支撑下游规划和执行。</p>
-            <p>这种组织方式的重点，不是单独做强某一层，而是让整条链路保持连续，避免“任务理解”和“环境理解”彼此脱节。</p>
-          </article>
-
-          <article class="story-card">
-            <p class="mini-label">difficulty</p>
-            <h2>问题与解决</h2>
-            <p>难点不只是训练一个路由模型，或者单独处理 EEG，而在于确定这些信息在机器人系统里应该处于哪一层，以及如何让从用户意图到几何感知再到执行的路径保持一致。</p>
-            <p>我的处理方式是同时覆盖路由和感知这两个相邻层级，而不是只在单一模块上做优化。这样系统在实际使用时，意图理解、任务分发和空间感知才能真正对齐。</p>
+            <h2>03 难点与解决</h2>
+            <p>尝试 Semantic Information+LightGCN，最后实现效果超过原算法。</p>
+            <p>双相机标定仿真一开始无法重合。后面是发现仿真器中跟现实中相机 z 方向不一样。</p>
+            <p>机械臂规划部分的代码，调试了很久。</p>
           </article>
         </div>
 
         <div class="story-media-column">
           <div class="story-media-card">
-            <p class="story-media-title">图像区</p>
-            <div class="empty-media">
-              <div>
-                <p class="mini-label">预留位</p>
-                <p>当前这页还没有接入公开可展示的图像材料。</p>
-              </div>
-            </div>
-            <p class="story-media-caption">右侧图像区即使暂时为空，也保留下来，保证和其他科研页结构一致。</p>
+            <p class="story-media-title">图片 01</p>
+            <img src="static/research/bci/bci-system-architecture.png" alt="BCI project system architecture" loading="lazy">
+          </div>
+
+          <div class="story-media-card">
+            <p class="story-media-title">图片 02</p>
+            <img src="static/research/bci/bci-simulation-scene.png" alt="BCI manipulation simulation scene" loading="lazy">
           </div>
         </div>
       </div>
@@ -112,11 +104,12 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-brand" data-i18n-en="Shihong Yuan">袁诗鸿</p>
-        <p class="footer-copy" data-i18n-en="Research project page for BCI-guided multi-task robotics.">脑机接口引导的多任务机器人操作项目页。</p>
+        <p class="footer-copy">02 脑机接口引导的多任务机械臂操作</p>
       </div>
       <div class="footer-links">
+        <a href="research-gdps-decoupled-posterior-sampling.html" data-i18n-en="Previous project">上一页</a>
         <a href="index.html#testi" data-i18n-en="Research">科研</a>
-        <a href="research-force-aware-manipulation.html" data-i18n-en="Next project">下一项</a>
+        <a href="research-force-aware-manipulation.html" data-i18n-en="Next project">下一页</a>
       </div>
       <div class="footer-meta">
         <span>Contact: shihong.23@intl.zju.edu.cn</span>
